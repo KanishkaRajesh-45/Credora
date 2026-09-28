@@ -1,0 +1,1251 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+/* =========================================================
+    CREDORA
+   PROFESSIONAL HOME + LOGIN
+   GREEN THEME
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
+
+    background: #f6f9f7;
+    color: #16382d;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.home-navbar {
+    width: 100%;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 5%;
+
+    background: #ffffff;
+    border-bottom: 1px solid #dfe9e4;
+
+    position: relative;
+    z-index: 10;
+}
+
+/* LOGO */
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    min-width: 220px;
+
+    cursor: pointer;
+}
+
+.logo-box {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #0b3d2e;
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.home-logo span {
+    color: #173d31;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+}
+
+/* NAVIGATION */
+
+.home-nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 34px;
+}
+
+.home-nav button {
+    border: none;
+    background: transparent;
+
+    color: #647c72;
+
+    font-size: 13px;
+    font-weight: 550;
+
+    cursor: pointer;
+    padding: 8px 3px;
+
+    transition: color 0.2s ease;
+}
+
+.home-nav button:hover {
+    color: #0b3d2e;
+}
+
+/* RIGHT ACTIONS */
+
+.home-actions {
+    min-width: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 20px;
+}
+
+.login-link {
+    border: none;
+    background: transparent;
+
+    color: #34483f;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-link:hover {
+    color: #0b3d2e;
+}
+
+/* GET STARTED */
+
+.navbar-cta {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 17px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #0b3d2e;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.navbar-cta:hover {
+    background: #145a42;
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.home-hero {
+    width: 100%;
+    height: calc(100vh - 76px);
+    min-height: 574px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   LEFT HERO
+========================================================= */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 9%;
+    padding-right: 4%;
+
+    position: relative;
+    z-index: 3;
+}
+
+/* EYEBROW */
+
+.hero-eyebrow {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+    padding: 8px 12px;
+
+    border: 1px solid #cdded6;
+    border-radius: 6px;
+
+    background: #ffffff;
+    color: #176b4d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.1px;
+}
+
+/* HEADING */
+
+.hero-content h1 {
+    margin: 0;
+
+    max-width: 650px;
+
+    color: #16382d;
+
+    font-size: clamp(44px, 4.4vw, 67px);
+    line-height: 0.99;
+
+    font-weight: 750;
+
+    letter-spacing: -3.2px;
+}
+
+.hero-content h1 span {
+    color: #176b4d;
+}
+
+/* DESCRIPTION */
+
+.hero-description {
+    max-width: 570px;
+
+    margin: 25px 0 0;
+
+    color: #647c72;
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 29px;
+}
+
+.primary-button,
+.secondary-button {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 0 18px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* PRIMARY */
+
+.primary-button {
+    border: 1px solid #0b3d2e;
+
+    background: #0b3d2e;
+    color: #ffffff;
+}
+
+.primary-button:hover {
+    background: #145a42;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(11, 61, 46, 0.18);
+}
+
+/* SECONDARY */
+
+.secondary-button {
+    border: 1px solid #cddbd5;
+
+    background: #ffffff;
+    color: #294c40;
+}
+
+.secondary-button:hover {
+    background: #f0f6f3;
+
+    border-color: #9eb8ac;
+
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   TRUST ITEMS
+========================================================= */
+
+.hero-trust {
+    display: flex;
+    align-items: center;
+
+    gap: 23px;
+
+    margin-top: 34px;
+}
+
+.hero-trust div {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #71857c;
+
+    font-size: 10px;
+    font-weight: 550;
+}
+
+.hero-trust svg {
+    color: #176b4d;
+}
+
+/* =========================================================
+   RIGHT HERO VISUAL
+========================================================= */
+
+.hero-visual {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef5f1 0%,
+            #f8fbf9 55%,
+            #eaf3ee 100%
+        );
+
+    border-left: 1px solid #dce7e1;
+}
+
+/* BACKGROUND CIRCLES */
+
+.hero-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 530px;
+    height: 530px;
+
+    border-radius: 50%;
+
+    border: 1px solid #cfe0d7;
+
+    opacity: 0.75;
+}
+
+.hero-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 390px;
+    height: 390px;
+
+    border-radius: 50%;
+
+    border: 1px solid #d7e5de;
+
+    opacity: 0.85;
+}
+
+/* =========================================================
+   CREDENTIAL CARD
+========================================================= */
+
+.credential-card {
+    width: 450px;
+    min-height: 430px;
+
+    padding: 29px 31px;
+
+    position: relative;
+    z-index: 3;
+
+    border: 1px solid #d4e2db;
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fbf9
+        );
+
+    box-shadow:
+        0 28px 60px rgba(11, 61, 46, 0.12);
+
+    transform: rotate(-2deg);
+}
+
+/* CARD TOP */
+
+.credential-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credential-brand {
+    color: #176b4d;
+
+    font-size: 10px;
+    font-weight: 750;
+
+    letter-spacing: 2px;
+}
+
+.verified-label {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #16845b;
+
+    font-size: 9px;
+    font-weight: 750;
+
+    letter-spacing: 0.7px;
+}
+
+/* AWARD ICON */
+
+.credential-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+
+    border-radius: 12px;
+
+    background: #eaf4ef;
+    color: #176b4d;
+}
+
+/* LABEL */
+
+.credential-label {
+    margin-top: 25px;
+
+    color: #7a8e86;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+/* TITLE */
+
+.credential-card h2 {
+    margin: 9px 0 5px;
+
+    color: #173d31;
+
+    font-size: 25px;
+    line-height: 1.2;
+
+    font-weight: 720;
+
+    letter-spacing: -0.8px;
+}
+
+.credential-subtitle {
+    margin: 0;
+
+    color: #648277;
+
+    font-size: 11px;
+}
+
+/* DIVIDER */
+
+.credential-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 25px 0;
+
+    background: #dfe9e4;
+}
+
+/* DETAILS */
+
+.credential-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.credential-details span,
+.credential-footer span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7a8e86;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+.credential-details strong,
+.credential-footer strong {
+    color: #294c40;
+
+    font-size: 10px;
+    font-weight: 650;
+}
+
+/* FOOTER */
+
+.credential-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-top: 34px;
+}
+
+/* QR */
+
+.qr-box {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #cfded6;
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #173d31;
+}
+
+/* =========================================================
+   FLOATING VERIFICATION CARD
+========================================================= */
+
+.verification-card {
+    position: absolute;
+
+    z-index: 5;
+
+    top: 20%;
+    right: 7%;
+
+    width: 190px;
+
+    padding: 13px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #d4e2db;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    box-shadow:
+        0 15px 35px rgba(11, 61, 46, 0.12);
+}
+
+.verification-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #e8f5ed;
+    color: #16845b;
+}
+
+.verification-card div:nth-child(2) {
+    flex: 1;
+}
+
+.verification-card span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #7a8e86;
+
+    font-size: 8px;
+}
+
+.verification-card strong {
+    color: #16845b;
+
+    font-size: 11px;
+}
+
+.verification-check {
+    color: #16845b;
+}
+
+/* =========================================================
+   FLOATING ACHIEVEMENT CARD
+========================================================= */
+
+.hero-achievement-card {
+    position: absolute;
+
+    z-index: 5;
+
+    bottom: 19%;
+    left: 7%;
+
+    width: 180px;
+
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #d4e2db;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    box-shadow:
+        0 15px 35px rgba(11, 61, 46, 0.11);
+}
+
+.mini-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #eaf4ef;
+    color: #176b4d;
+}
+
+.hero-achievement-card span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #7a8e86;
+
+    font-size: 8px;
+}
+
+.hero-achievement-card strong {
+    color: #294c40;
+
+    font-size: 11px;
+}
+
+/* =========================================================
+   HOME RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .home-navbar {
+        padding: 0 4%;
+    }
+
+    .home-logo,
+    .home-actions {
+        min-width: 150px;
+    }
+
+    .home-nav {
+        gap: 18px;
+    }
+
+    .home-hero {
+        grid-template-columns: 52% 48%;
+    }
+
+    .hero-content {
+        padding-left: 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .credential-card {
+        width: 380px;
+    }
+
+    .verification-card {
+        right: 3%;
+    }
+
+    .hero-achievement-card {
+        left: 3%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .home-page {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+    }
+
+    .home-navbar {
+        height: 68px;
+        padding: 0 20px;
+    }
+
+    .home-nav {
+        display: none;
+    }
+
+    .home-logo {
+        min-width: auto;
+    }
+
+    .home-actions {
+        min-width: auto;
+        margin-left: auto;
+    }
+
+    .login-link {
+        display: none;
+    }
+
+    .home-hero {
+        height: auto;
+        min-height: calc(100vh - 68px);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        padding: 55px 24px 40px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-trust {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        min-height: 520px;
+
+        padding: 50px 20px;
+    }
+
+    .credential-card {
+        width: min(430px, 90%);
+
+        transform: rotate(0);
+    }
+
+    .verification-card {
+        right: 3%;
+        top: 12%;
+    }
+
+    .hero-achievement-card {
+        left: 3%;
+        bottom: 12%;
+    }
+}
+
+/* =========================================================
+   LOGIN PAGE
+========================================================= */
+
+.login-page {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: #f6f9f7;
+}
+
+/* LOGIN CARD */
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 42px 42px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #dce7e1;
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 55px rgba(11, 61, 46, 0.10);
+
+    text-align: center;
+}
+
+/* BRAND */
+
+.login-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+    color: #173d31;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.brand-symbol {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0b3d2e;
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/* HEADING */
+
+.login-card h1 {
+    margin: 0;
+
+    color: #16382d;
+
+    font-size: 34px;
+    line-height: 1.2;
+
+    font-weight: 750;
+
+    letter-spacing: -0.8px;
+}
+
+.login-subtitle {
+    margin: 11px 0 30px;
+
+    color: #647c72;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* FORM */
+
+.login-card form {
+    width: 100%;
+    text-align: left;
+}
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #294c40;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #cddbd5;
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #173d31;
+
+    font-size: 13px;
+
+    transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #91a29a;
+}
+
+.form-group input:focus {
+    border-color: #176b4d;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 107, 77, 0.10);
+}
+
+/* =========================================================
+   SIGN IN BUTTON
+========================================================= */
+
+.login-submit {
+    width: 100%;
+    height: 46px;
+
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0b3d2e;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.login-submit:hover {
+    background: #145a42;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 18px rgba(11, 61, 46, 0.22);
+}
+
+/* BACK BUTTON */
+
+.back-home {
+    margin-top: 20px;
+
+    padding: 8px 12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #647c72;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.back-home:hover {
+    color: #0b3d2e;
+}
+
+/* ERROR */
+
+.login-error {
+    margin-bottom: 14px;
+
+    padding: 10px 12px;
+
+    background: #fff5f5;
+
+    border: 1px solid #f1caca;
+    border-radius: 7px;
+
+    color: #c03939;
+
+    font-size: 12px;
+}
+
+/* =========================================================
+   LOGIN RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 35px 25px 28px;
+    }
+
+    .login-card h1 {
+        font-size: 29px;
+    }
+}
+
+/* =========================================================
+   CREDORA HOME + LOGIN REFRESH
+========================================================= */
+
+.home-page,
+.login-page {
+    font-family: "DM Sans", sans-serif;
+    color: #152238;
+}
+
+.home-page {
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+    background: #f6f8fb;
+}
+
+.home-navbar {
+    height: 76px;
+    padding: 0 6%;
+    background: #ffffff;
+    border-bottom: 1px solid #e6ebf2;
+}
+
+.home-logo {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    background: transparent;
+    color: #0b1f3a;
+    font: 700 21px "Space Grotesk", sans-serif;
+    cursor: pointer;
+}
+
+.logo-box,
+.brand-symbol {
+    border-radius: 8px;
+    background: #2d6cdf;
+}
+
+.home-actions { min-width: 0; gap: 20px; }
+.login-link { color: #51627a; font: 600 13px "DM Sans", sans-serif; }
+.login-link:hover { color: #2d6cdf; }
+.navbar-cta { height: 38px; border-radius: 6px; background: #0b1f3a; font: 600 12px "DM Sans", sans-serif; }
+.navbar-cta:hover { background: #19365b; }
+
+.home-content {
+    max-width: 1180px;
+    min-height: calc(100vh - 76px);
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    align-items: center;
+    gap: 9%;
+    margin: 0 auto;
+    padding: 70px 6%;
+}
+
+.home-copy { max-width: 390px; }
+.home-eyebrow { margin: 0 0 16px; color: #2d6cdf; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
+.home-copy h1 { margin: 0; color: #0b1f3a; font: 700 clamp(42px, 6vw, 64px) "Space Grotesk", sans-serif; letter-spacing: -2px; }
+.home-tagline { max-width: 340px; margin: 16px 0 0; color: #718096; font-size: 16px; line-height: 1.65; }
+.home-buttons { display: flex; align-items: center; gap: 10px; margin-top: 28px; }
+.home-primary, .home-secondary { height: 43px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 16px; border-radius: 6px; font: 600 12px "DM Sans", sans-serif; cursor: pointer; }
+.home-primary { border: 1px solid #0b1f3a; background: #0b1f3a; color: white; }
+.home-primary:hover { background: #19365b; }
+.home-secondary { border: 1px solid #cdd9e8; background: white; color: #0b1f3a; }
+.home-secondary:hover { border-color: #2d6cdf; color: #2d6cdf; }
+
+.home-preview { overflow: hidden; border: 1px solid #dce5f1; border-radius: 10px; background: white; box-shadow: 0 18px 45px rgba(21, 34, 56, .08); }
+.preview-topbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 19px; border-bottom: 1px solid #e6ebf2; color: #0b1f3a; font: 600 12px "Space Grotesk", sans-serif; }
+.preview-brand, .preview-status { display: flex; align-items: center; gap: 7px; }
+.preview-mark { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 5px; background: #2d6cdf; color: white; font-size: 11px; }
+.preview-status { color: #35a275; font: 500 10px "DM Sans", sans-serif; }
+.preview-body { min-height: 330px; display: grid; grid-template-columns: 145px 1fr; }
+.preview-sidebar { display: grid; align-content: start; gap: 17px; padding: 24px 16px; background: #0b1f3a; color: #9db2cc; font-size: 11px; }
+.preview-sidebar-title { color: #7890ae; font-size: 9px; font-weight: 700; letter-spacing: 1px; }
+.preview-nav-active { color: white; }
+.preview-documents { padding: 30px 25px; background: #fbfcfe; }
+.preview-heading { display: grid; gap: 5px; margin-bottom: 22px; color: #0b1f3a; font: 600 18px "Space Grotesk", sans-serif; }
+.preview-heading small { color: #718096; font: 400 11px "DM Sans", sans-serif; }
+.preview-folder, .preview-file { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; padding: 14px; border: 1px solid #e6ebf2; border-radius: 7px; background: white; color: #2d6cdf; font-size: 12px; }
+.preview-folder { border-color: #b8ccef; background: #f1f5ff; }
+.preview-folder span, .preview-file span { color: #152238; }
+.preview-folder small, .preview-file small { margin-left: auto; color: #718096; font-size: 10px; }
+
+.login-page { min-height: 100vh; height: auto; gap: 70px; padding: 60px 7%; background: #f6f8fb; }
+.login-card { max-width: 430px; padding: 38px 42px 30px; border: 1px solid #e1e8f1; border-radius: 9px; box-shadow: 0 15px 40px rgba(21, 34, 56, .07); text-align: left; }
+.login-brand { justify-content: flex-start; margin-bottom: 34px; color: #0b1f3a; font: 700 21px "Space Grotesk", sans-serif; }
+.brand-symbol { width: 34px; height: 34px; font-size: 16px; }
+.login-card h1 { color: #0b1f3a; font: 700 30px "Space Grotesk", sans-serif; letter-spacing: -.5px; }
+.login-subtitle { margin: 10px 0 28px; color: #718096; font-size: 13px; }
+.form-group label { color: #344862; font-size: 12px; }
+.form-group input { height: 44px; border-color: #cdd9e8; border-radius: 6px; color: #152238; font-size: 12px; }
+.form-group input:focus { border-color: #2d6cdf; box-shadow: 0 0 0 3px rgba(45, 108, 223, .1); }
+.login-submit { height: 44px; margin-top: 5px; border-radius: 6px; background: #0b1f3a; font: 600 13px "DM Sans", sans-serif; }
+.login-submit:hover { background: #19365b; box-shadow: 0 7px 18px rgba(11, 31, 58, .18); }
+.back-home { margin-top: 18px; padding-left: 0; color: #718096; }
+.back-home:hover { color: #2d6cdf; }
+.login-error { background: #fff7f7; border-color: #efcaca; }
+.login-aside { width: min(360px, 35vw); color: #152238; }
+.login-aside-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 8px; background: #eaf1ff; color: #2d6cdf; }
+.login-aside-label { margin: 22px 0 12px; color: #2d6cdf; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; }
+.login-aside h2 { margin: 0; color: #0b1f3a; font: 600 27px "Space Grotesk", sans-serif; }
+.login-aside > p:not(.login-aside-label) { color: #718096; font-size: 13px; line-height: 1.65; }
+.login-file-preview { margin-top: 26px; padding: 9px; border: 1px solid #dce5f1; border-radius: 8px; background: white; box-shadow: 0 12px 30px rgba(21, 34, 56, .05); }
+.login-file-preview div { display: flex; align-items: center; gap: 9px; padding: 11px; border-bottom: 1px solid #eef1f5; color: #2d6cdf; font-size: 11px; }
+.login-file-preview div:last-child { border-bottom: 0; }
+.login-file-preview span { color: #152238; }
+.login-file-preview small { margin-left: auto; color: #718096; font-size: 9px; }
+
+@media (max-width: 760px) {
+    .home-content { grid-template-columns: 1fr; gap: 45px; min-height: auto; padding: 65px 7%; }
+    .home-copy { max-width: none; }
+    .home-preview { max-width: 600px; width: 100%; }
+    .login-page { flex-direction: column; gap: 35px; padding: 35px 20px; }
+    .login-card { max-width: 470px; }
+    .login-aside { width: min(470px, 100%); }
+    .login-file-preview { display: none; }
+}
+
+@media (max-width: 460px) {
+    .home-navbar { padding: 0 20px; }
+    .home-actions { gap: 10px; }
+    .home-content { padding: 50px 20px; }
+    .preview-body { grid-template-columns: 105px 1fr; }
+    .preview-documents { padding: 22px 14px; }
+    .preview-sidebar { padding: 22px 11px; }
+    .login-card { padding: 30px 24px 25px; }
+}
